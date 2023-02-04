@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <p id="resultado"></p>
+            <div class="teclado">
+                <button class="botao" onclick="clean()">C</button>
+                <button class="botao" onclick="back(), sound(meowBack)"><</button>
+                        <button class="botao" onclick="insert('/')">/</button>
+                        <button class="botao red" onclick="insert('*')">X</button>
+
+
+                        <button class="botao" onclick="insert('7'), sound(meowSeven)">7</button>
+                        <button class="botao" onclick="insert('8'), sound(meowEight)">8</button>
+                        <button class="botao" onclick="insert('9'), sound(meowNine)">9</button>
+                        <button class="botao" onclick="insert('-'), sound(meowLess)">-</button>
+
+
+                        <button class="botao" onclick="insert('4'), sound(meowFour)">4</button>
+                        <button class="botao" onclick="insert('5'), sound(meowFive)">5</button>
+                        <button class="botao" onclick="insert('6'), sound(meowSix)">6</button>
+                        <button class="botao" onclick="insert('+'), sound(meowMore)">+</button>
+
+
+                        <button class="botao" onclick="insert('1'), sound(meowOne)">1</button>
+                        <button class="botao" onclick="insert('2'), sound(meowTwo)">2</button>
+                        <button class="botao" onclick="insert('3'), sound(meowThree)">3</button>
+                        <button class="botao botaoIgual" onclick="calcular(), sound(meowEqual)">=</button>
+
+
+                        <button class="botao botaoZero margin" onclick="insert('0'), sound(meowZero)">0</button>
+                        <button class="botao margin" onclick="insert('.'), sound(meowDot)">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="scriptCalculator.js"></script>
+    <script src="scriptSounds.js"></script>
+</body>
+
+</html>

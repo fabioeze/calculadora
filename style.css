@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    /*background-image: linear-gradient(45deg,black, crimson);*/
+    background-image: url('components/images/fundo5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0px -25px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+.calculadora {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 32vh;
+    height: 56vh;
+    padding: 15px;
+    background-image: url('components/images/Group 3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#resultado {
+    background-color: #000000;
+    margin: 5px;
+    font-size: 25px;
+    margin-top: 40.2%;
+    height: 9%;
+    border-radius: 8%;
+    width: 83%;
+    margin-left: 7%;
+    color: white;
+    text-align: right;
+    padding: 5px;
+}
+
+.teclado {
+    display: flex;
+    height: 25%;
+    margin-left: 6%;
+    flex-wrap: wrap;
+}
+
+button.botao {
+    width: 21%;
+    height: 45%;
+    outline: none;
+    margin: 1.4%;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    font-family: system-ui;
+    font-size: 95%;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.red {
+    background: #CF0025;
+    color:#fff;
+}
+
+button.botaoIgual {
+    height: 98%;
+    background: #F6DA46;
+}
+
+button.botao.botaoZero {
+    width: 45%;
+}
+
+button.margin {
+    margin-top: -22.6%;
+}
